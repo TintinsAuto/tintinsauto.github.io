@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tintin's Auto Detailing | Mobile Detailing</title>
+  <meta name="description" content="Tintin's Auto Detailing — professional mobile auto detailing serving Everett, Washington and surrounding areas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="brand"><img src="logo.png" alt="Tintin's Auto Detailing logo"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why Tintin's</a>
+      <a href="#book" class="nav-book">Book Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">MOBILE DETAILING • EVERETT, WA</p>
+        <h1>We bring the <span>shine</span> to you.</h1>
+        <p class="hero-copy">Professional mobile auto detailing at your home, work, or wherever your vehicle is parked.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#book">Book Your Detail</a>
+          <a class="button ghost" href="#services">View Services</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Mobile service</span>
+          <span>✓ Interior & exterior</span>
+          <span>✓ Convenient scheduling</span>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="logo.png" alt="Tintin's Auto Detailing">
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Choose your detail.</h2>
+        <p>Packages can be customized around your vehicle and how much time it needs.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">✦</div>
+          <h3>Interior Detail</h3>
+          <p>Deep clean for seats, carpets, mats, dash, panels, and high-touch areas.</p>
+          <a href="#book" data-service="Interior Detail">Request this service →</a>
+        </article>
+        <article class="card featured">
+          <div class="tag">POPULAR</div>
+          <div class="icon">✦</div>
+          <h3>Full Detail</h3>
+          <p>Interior and exterior cleaning for a complete reset and fresh finish.</p>
+          <a href="#book" data-service="Full Detail">Request this service →</a>
+        </article>
+        <article class="card">
+          <div class="icon">✦</div>
+          <h3>Exterior Detail</h3>
+          <p>Wash, wheels, tires, exterior surfaces, and a clean glossy finish.</p>
+          <a href="#book" data-service="Exterior Detail">Request this service →</a>
+        </article>
+      </div>
+      <p class="pricing-note">Pricing varies by vehicle size and condition. Get a quote when you book.</p>
+    </section>
+
+    <section id="why" class="dark-section">
+      <div class="section-heading">
+        <p class="eyebrow">WHY TINTIN'S</p>
+        <h2>Detailing without the drive.</h2>
+      </div>
+      <div class="features">
+        <div><strong>01</strong><h3>We come to you</h3><p>No waiting room. No rearranging your day.</p></div>
+        <div><strong>02</strong><h3>Attention to detail</h3><p>Every appointment is focused on getting your vehicle looking its best.</p></div>
+        <div><strong>03</strong><h3>Easy booking</h3><p>Pick a service, choose a time, and send your vehicle details.</p></div>
+      </div>
+    </section>
+
+    <section id="book" class="section booking">
+      <div class="section-heading">
+        <p class="eyebrow">BOOK YOUR DETAIL</p>
+        <h2>Let's get your car looking right.</h2>
+        <p>Submit a booking request below. Once your scheduling link is connected, customers can select an available appointment time directly.</p>
+      </div>
+
+      <div class="booking-grid">
+        <form id="bookingForm" class="booking-form">
+          <label>Service
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Interior Detail</option>
+              <option>Full Detail</option>
+              <option>Exterior Detail</option>
+              <option>Custom / Not sure</option>
+            </select>
+          </label>
+
+          <div class="two">
+            <label>Name<input id="name" name="name" type="text" placeholder="Your name" required></label>
+            <label>Phone<input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required></label>
+          </div>
+
+          <label>Email<input id="email" name="email" type="email" placeholder="you@email.com"></label>
+
+          <div class="two">
+            <label>Preferred date<input id="date" name="date" type="date" required></label>
+            <label>Preferred time<input id="time" name="time" type="time" required></label>
+          </div>
+
+          <label>Vehicle details
+            <input id="vehicle" name="vehicle" type="text" placeholder="Example: 2020 Honda Civic">
+          </label>
+
+          <label>Anything we should know?
+            <textarea id="notes" name="notes" rows="4" placeholder="Pet hair, stains, very dirty, location details, etc."></textarea>
+          </label>
+
+          <button class="button primary full" type="submit">Request My Booking</button>
+          <p class="form-note">This request opens your email app so you can send the details to Tintin's.</p>
+          <div id="confirmation" class="confirmation" hidden>Booking request prepared. Send the email to finish your request.</div>
+        </form>
+
+        <aside class="booking-side">
+          <img src="logo.png" alt="" class="booking-logo">
+          <h3>Mobile service area</h3>
+          <p>Everett, WA and surrounding areas.</p>
+          <div class="contact-box">
+            <p><strong>Need a quick answer?</strong></p>
+            <p>Call or text using the contact button below once your business number is added.</p>
+          </div>
+          <a class="button ghost full" href="#home">Back to top</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.png" alt="Tintin's Auto Detailing">
+    <p>© 2026 Tintin's Auto Detailing • Everett, WA</p>
+  </footer>
+
+<script>
+/* ===== OWNER SETTINGS =====
+   Replace this with the email where you want booking requests sent.
+   Example: "tintinsdetailing@gmail.com"
+*/
+const BUSINESS_EMAIL = "YOUR-BOOKING-EMAIL-HERE@example.com";
+
+const serviceSelect = document.getElementById("service");
+document.querySelectorAll("[data-service]").forEach(link => {
+  link.addEventListener("click", () => {
+    serviceSelect.value = link.dataset.service;
+  });
+});
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const data = {
+    service: document.getElementById("service").value,
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    date: document.getElementById("date").value,
+    time: document.getElementById("time").value,
+    vehicle: document.getElementById("vehicle").value,
+    notes: document.getElementById("notes").value
+  };
+
+  const subject = encodeURIComponent("New Tintin's Auto Detailing Booking Request");
+  const body = encodeURIComponent(
+`New booking request
+
+Service: ${data.service}
+Name: ${data.name}
+Phone: ${data.phone}
+Email: ${data.email}
+Preferred date: ${data.date}
+Preferred time: ${data.time}
+Vehicle: ${data.vehicle}
+
+Notes:
+${data.notes}`
+  );
+
+  window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+  document.getElementById("confirmation").hidden = false;
+});
+</script>
+</body>
+</html>
